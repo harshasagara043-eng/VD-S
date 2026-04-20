@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VD-S Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using a sleek, modern Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="glass-panel">
+        <div class="header">
+            <h1>VD<span class="highlight">-S</span></h1>
+            <div class="status-container">
+                <span id="status-dot" class="status-dot idle"></span>
+                <span id="status-text">Ready</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="video-url" placeholder="Enter video URL..." autocomplete="off" />
+            <button id="extract-btn" class="btn primary-btn">Fetch Data</button>
+        </div>
+
+        <div id="result-view" class="result-view" style="display: none;">
+            <div class="thumbnail-wrapper">
+                <img id="thumbnail" src="" alt="Video Thumbnail" />
+            </div>
+            <h2 id="video-title">...</h2>
+
+            <div class="resolutions-header">Available Resolutions:</div>
+            <div id="resolutions" class="resolutions-grid">
+                <!-- Dynamically injected buttons -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
